@@ -1,0 +1,386 @@
+body {
+	padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
+	background: url(../img/bg.png) repeat;
+}
+
+form {
+	margin-bottom: 0;	
+}
+
+.help-block {
+	font-size: 11px;
+	color: #666;	
+}
+
+.mr-10 {
+	margin-right: 10px;	
+}
+
+ul {
+	list-style: none;
+	padding: 5px 20px;
+	padding-right: 0;	
+}
+
+.caret {
+	border-top: 4px solid #bbb;	
+}
+
+.box {
+	border-radius: 3px;
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-khtml-border-radius: 3px; 
+	border: 1px solid #d5d5d5;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.11);
+	margin-bottom: 3.0%;
+	background: #fff;
+	margin-top: 10px;
+}
+
+.modal-body {
+	white-space: pre-wrap!important;	
+}
+
+.box:before, .box:after {
+	content: "";
+	display: table;
+}
+	
+.box:after {
+	clear: both;
+}
+	
+.box .header {
+	border-radius: 3px;
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-khtml-border-radius: 3px; 
+	position: relative;
+	background: url(../img/nav_bg.png) repeat;
+	box-shadow: inset 0 1px 0 #fff, 0 1px 2px rgba(0,0,0,0.02);
+}
+
+.box .header h4 {
+	position: relative;
+	padding: 9px 0;
+	padding-top: 8px;
+	padding-left: 10px;
+	border-bottom: 1px solid #c2c2c2;
+	margin: 0;
+	font-size: 13px;
+	color: #444;
+	line-height: 20px;
+}
+	
+.box .content {
+	padding: 0;
+	margin: 0;
+}
+
+.content.pad {
+	padding: 20px;	
+}
+
+.box .content:before, .box .content:after {
+	content: "";
+	display: table;
+}
+
+.box .content:after {
+	clear: both;
+}
+
+/******** Header ********/
+.navbar-inner {
+	background: url(../img/nav_bg.png) repeat-x;
+	border-bottom: 1px solid #dadada;
+}
+	.navbar-fixed-top {
+    	margin-bottom: 0;
+	}
+	
+	.navbar-fixed-top, .navbar-fixed-bottom {
+   		position: absolute;
+	}
+	
+	#header h1 {
+		background: url(../img/logo_in.png) no-repeat;
+		width: 100px;
+		height: 26px;
+		text-indent: -9999px;
+		margin-left: 42px;
+	}
+
+	#logo {
+		float: left;	
+	}
+	
+	#info {
+		float: right;
+		padding-top: 7px;
+	}
+	
+	ul#userBox  {
+		margin: 0;
+		padding: 0;
+		margin-right: 37px;
+	}
+
+	ul#userBox li {
+		position: relative;
+		float: left;
+		cursor: pointer; 
+		padding: 5px;
+		color: #fff;
+		margin-left: 15px;
+	}
+	
+	ul#userBox li a {
+		display: inline-block;
+		font-size: 12px;
+		text-decoration: none;	
+		color: #aaa;
+	}
+
+	ul#userBox li a img { 
+		margin-right: 5px;
+		position: relative;
+		top: 2px;
+	}
+	
+	ul#userBox li span.notify { 
+		position: relative;
+		top: -1px;
+		text-align: center; 
+		background: url(../img/number.png) repeat-x; 
+		display: inline-block; 
+		padding: 0 5px;
+		color: #fff;
+		margin-left: 5px; 
+		-moz-border-radius: 2px; 
+		-webkit-border-radius: 2px; 
+		-o-border-radius: 2px;
+		-ms-border-radius: 2px;
+		-khtml-border-radius: 2px; 
+		border-radius: 2px;  
+		font-size: 11px; 
+		line-height: 15px; 
+	}
+	
+	ul#userBox .dropdown-menu {
+		border: 1px solid #d5d5d5;	 
+	}
+	
+	.dropdown-menu, .box-control {
+		position: relative;
+		z-index: 1000;	
+	}
+	
+	.dropdown-menu {
+		position: absolute;
+	}
+	
+	ul#userBox li ul.dropdown-menu {
+		width: 160px;
+		position: absolute;
+		right: 0;
+		margin: 0 auto;
+		background: #fff;  
+		overflow: hidden;
+		padding: 0;
+	}
+	
+	ul#userBox li > ul.dropdown-menu {
+		top: auto;
+		left: auto;
+		font-size: 11px;
+		padding: 0;
+		margin: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	
+	ul#userBox li ul.dropdown-menu li {
+		border: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+	ul#userBox li ul.dropdown-menu li a {
+		color: #456180;
+		border: none;
+		width: 160px;
+		display: block;
+		padding: 5px 10px;
+	}
+	
+	ul#userBox li ul.dropdown-menu li a img {
+		position: relative;
+		top: -2px;	
+	}
+	
+	ul#userBox li ul.dropdown-menu li a:hover {
+		background: url(../img/button.png);
+		text-decoration: none;
+		color: #fff;
+	}
+	
+	ul#userBox li ul.dropdown-menu li a:hover .icon-acc {
+		background: url(../img/icons/set-1/cog_hover.png) no-repeat;	
+	}
+	
+	ul#userBox li ul.dropdown-menu li a:hover .icon-off {
+		background: url(../img/icons/set-1/logoff_hover.png) no-repeat;	
+	}
+	
+	ul#userBox li ul.dropdown-menu li.divider {
+		width: 160px;
+		margin: 7px 0;	
+	}
+
+/******** Login ********/
+#login_logo {
+	background: url(../img/logo_in.png) no-repeat;	
+	width: 100px;
+	height: 26px;
+	margin: 0 auto;
+	padding: 10px 0 5px 0;
+	text-align: center;
+	
+}
+
+.form-signin {
+	max-width: 300px;
+	padding: 19px 29px 29px;
+	margin: 0 auto 20px;
+	margin-top: 90px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+			border-radius: 5px;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+			box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+	  
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+	  
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+      	height: auto;
+      	margin-bottom: 15px;
+      }
+	  
+/******** Main ********/
+#main {
+	padding-top: 80px;
+}
+
+#main-content {
+	float: left;
+	width: 100%;
+}
+
+[class^="icon-"] { margin-right: 2px; position: relative; top: -2px; }
+
+/***************
+* Install Page
+****************/
+#page {
+	background: #fff;
+	color: #333;
+	font-family: "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans", sans-serif;
+	margin: 2em auto 6em auto;
+	width: 700px;
+	padding: 1em 2em;
+	-moz-border-radius: 11px;
+	-khtml-border-radius: 11px;
+	-webkit-border-radius: 11px;
+	border-radius: 11px;
+	border: 1px solid #dfdfdf;
+}
+
+.img-force-center {
+	margin: 0 auto!important;	
+}
+
+#page p {
+	color: #666;	
+}
+
+/* jquery.fullcalendar.js needed */
+
+/* color picker */
+.colorpicker, .bootstrap-timepicker {
+	z-index: 9999!important;
+}
+
+.loadingDiv {
+	background: url(../img/ajaxloader.gif);
+	margin: 0 auto;	
+	width: 16px;
+	height: 16px;
+	display: none;
+}
+
+/* will make modal-body scroll on mobile if you have too many fields*/
+.modal {
+	overflow: auto;	
+}
+
+.modal-body { 
+   height: 60%;
+}
+
+.modal-body { 
+	max-height: 400px;
+    padding: 15px; 
+    overflow-y: auto; 
+    -webkit-overflow-scrolling: touch; 
+ }
+ 
+ /* modal body screen sizes */
+ @media (max-width: 640px) 
+ {
+	.modal-body { 
+		max-height: 180px;
+	}
+ }
+ 
+ @media (max-width: 600px) 
+ {
+	.modal-body { 
+		max-height: 400px;
+	}
+ }
+ 
+ @media (max-width: 480px) 
+ {
+	.modal-body { 
+		max-height: 140px;
+	}
+ }
+ 
+ @media (max-width: 360px) 
+ {
+	.modal-body { 
+		max-height: 400px;
+	}
+ }
+ 
+ @media (max-width: 320px) 
+ {
+	.modal-body { 
+		max-height: 280px;
+	}
+ }
+ 
