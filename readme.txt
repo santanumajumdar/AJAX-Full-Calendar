@@ -1,3 +1,5 @@
+## Introduction
+
 Use the 'connection.php' found at 'includes' to configure your database (in case one click install fails)
 
 
